@@ -1,0 +1,115 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700');
+
+$general-font:'Poppins', sans-serif;
+$primary-color: #76aa6f;
+
+
+
+
+html {
+    background-color: $green;
+  }
+
+body {
+    font-family: $general-font;
+}
+
+
+nav {
+    height: 100px;
+}
+
+.navbar-item img {
+    max-height: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+.navbar-end {
+    justify-content: flex-end;
+    margin-left: 0;
+}}
+
+@media screen and (min-width: 1024px){
+.navbar-start {
+    margin: 0 auto;
+}}
+
+.navbar-item, .button {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .1em;
+    font-size: 14px;
+    transition: all .25s ease-in-out;
+
+  
+}
+   
+.navbar-item, .navbar-link {
+    padding: 0.5rem 1.2rem;
+}
+
+
+.button.is-primary {
+    background-color: $primary-color;
+  }
+
+.button.is-outlined {
+
+    border: 1.5px solid $primary-color;
+}
+
+
+.button.is-primary:hover, .button.is-primary.is-hovered {
+    background-color: white ;
+    border: 1.5px solid $primary-color ;
+    color: black ;
+}
+
+.button.is-outlined:hover, .button.is-outlined.is-hovered{
+    background-color: $primary-color;
+    color: white;
+}
+
+
+a.navbar-item:hover, a.navbar-link:hover{
+    background-color:white;
+    color: $primary-color;
+    transition: all .25s ease-in-out;
+}
+
+
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  .scale-up-center {
+	-webkit-animation: scale-up-center 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.navbar-dropdown .navbar-item {
+    padding: 1rem;
+}
+
+.navbar-dropdown{
+    padding: 1rem;
+}
