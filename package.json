@@ -34,6 +34,9 @@
   "bundleDependencies": false,
   "deprecated": false,
   "description": "Start package for Bulma",
+  "engines": {
+    "node": "8"
+    },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "babel-cli": "^6.26.0",
